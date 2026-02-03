@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initCountdown();
     initStravaWidget();
     initPricingModal();
+    initPaceChart();
 });
 
 /**
@@ -617,4 +618,117 @@ function initPricingModal() {
             closeModal();
         }
     });
+}
+
+/**
+ * Pace Evolution Chart
+ */
+function initPaceChart() {
+    const canvas = document.getElementById('paceEvolutionChart');
+    if (!canvas) return;
+
+    // Dados de evolução de pace (5K) - do mais antigo para o mais recente
+    const data = {
+        labels: [
+            'Natal Solidário\n(Dez/25)',
+            'UNIMED\n(Dez/25)',
+            'IFTM\n(Dez/25)',
+            'WR Run\n(Jan/26)'
+        ],
+        datasets: [{
+            label: 'Pace (min/km)',
+            data: [
+                4.27,  // 21:20 / 5km = 4:16
+                4.01,  // 20:07 / 5km = 4:01
+                3.81,  // 19:03 / 5km = 3:48
+                3.50   // 17:31 / 5km = 3:30
+            ],
+            borderColor: '#FF6B00',
+            backgroundColor: 'rgba(255, 107, 0, 0.1)',
+            borderWidth: 3,
+            fill: true,
+            tension: 0.4, // Smooth curve
+            pointRadius: 6,
+            pointHoverRadius: 8,
+            pointBackgroundColor: '#FF6B00',
+            pointBorderColor: '#FFFFFF',
+            pointBorderWidth: 2,
+            pointHoverBackgroundColor: '#FF8C38',
+            pointHoverBorderColor: '#FFFFFF',
+        }]
+    };
+
+    const config = {
+        type: 'line',
+        data: data,
+        options: {
+            responsive: true,
+            maintainAspectRatio: true,
+            plugins: {
+                legend: {
+                    display: false
+                },
+                tooltip: {
+                    backgroundColor: 'rgba(26, 26, 26, 0.95)',
+                    titleColor: '#FF6B00',
+                    bodyColor: '#FFFFFF',
+                    borderColor: '#2D2D2D',
+                    borderWidth: 1,
+                    padding: 12,
+                    displayColors: false,
+                    callbacks: {
+                        label: function (context) {
+                            const pace = context.parsed.y;
+                            const paceMin = Math.floor(pace);
+                            const paceSec = Math.round((pace - paceMin) * 60);
+                            return `Pace: ${paceMin}:${String(paceSec).padStart(2, '0')}/km`;
+                        }
+                    }
+                }
+            },
+            scales: {
+                y: {
+                    reverse: true, // Lower is better for pace
+                    beginAtZero: false,
+                    min: 3.0,
+                    max: 4.5,
+                    ticks: {
+                        color: '#B0B0B0',
+                        font: {
+                            size: 12,
+                            family: "'Inter', sans-serif"
+                        },
+                        callback: function (value) {
+                            const paceMin = Math.floor(value);
+                            const paceSec = Math.round((value - paceMin) * 60);
+                            return `${paceMin}:${String(paceSec).padStart(2, '0')}`;
+                        }
+                    },
+                    grid: {
+                        color: '#2D2D2D',
+                        drawBorder: false
+                    }
+                },
+                x: {
+                    ticks: {
+                        color: '#B0B0B0',
+                        font: {
+                            size: 11,
+                            family: "'Inter', sans-serif"
+                        }
+                    },
+                    grid: {
+                        display: false,
+                        drawBorder: false
+                    }
+                }
+            },
+            interaction: {
+                intersect: false,
+                mode: 'index'
+            }
+        }
+    };
+
+    new Chart(canvas, config);
 }
