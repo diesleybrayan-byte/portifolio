@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Diesley Sousa - Corredor de elite em formação. Disciplina de Samurai, Alma de Nerd. Rumo à Elite.">
+    <meta name="keywords" content="corredor, atletismo, maratona, Diesley Sousa, running, atleta">
+    <meta name="author" content="Diesley Sousa">
+
+    <title>Diesley Sousa | Corredor - Rumo à Elite</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <div class="header__brand">
+                <img src="assets/images/runner-icon-red.png" alt="Made in Minas" class="header__icon-img">
+                <span class="header__logo">MADE IN MINAS</span>
+            </div>
+            <nav class="header__nav" id="nav">
+                <ul class="header__menu">
+                    <li><a href="#hero" class="header__link">Início</a></li>
+                    <li><a href="#stats" class="header__link">Estatísticas</a></li>
+                    <li><a href="#origin" class="header__link">A Origem</a></li>
+                    <li><a href="#visibility" class="header__link">Visibilidade</a></li>
+                    <li><a href="#partners" class="header__link">Parceiros</a></li>
+                </ul>
+            </nav>
+            <div class="header__social">
+                <a href="https://instagram.com/diesley.sousa" target="_blank"
+                    class="header__social-link">@diesley.sousa</a>
+            </div>
+            <button class="header__toggle" id="menuToggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero__background"></div>
+        <div class="hero__container">
+            <div class="hero__content">
+                <div class="hero__image-wrapper">
+                    <img src="assets/images/hero-regata.jpg" alt="Diesley Sousa correndo" class="hero__image">
+                    <div class="hero__time-badge">
+                        <span class="hero__time">19:17</span>
+                    </div>
+                    <div class="hero__distance-badge">
+                        <span class="hero__distance">5.1K</span>
+                    </div>
+                </div>
+                <div class="hero__info">
+                    <div class="hero__stats-mini">
+                        <span class="hero__stat-item">29 Anos</span>
+                        <span class="hero__stat-divider">|</span>
+                        <span class="hero__stat-item">1,68 cm</span>
+                        <span class="hero__stat-divider">|</span>
+                        <span class="hero__stat-item">52 kg</span>
+                    </div>
+                    <h1 class="hero__name">DIESLEY SOUSA</h1>
+                    <p class="hero__tagline">Disciplina de Samurai, Alma de Nerd.</p>
+                    <h2 class="hero__motto">RUMO À ELITE</h2>
+                    <p class="hero__description">
+                        Aos 29 anos, estou entrando no auge fisiológico para corredores de fundo.
+                        Em tempo recorde, saí do zero para disputar pódios locais, combinando uma ética
+                        de trabalho obsessiva.
+                    </p>
+                    <div class="hero__trainer">
+                        <span class="hero__trainer-label">Treinador</span>
+                        <div class="hero__trainer-logo">
+                            <img src="assets/images/willrunner-logo.png" alt="Will Runner"
+                                class="hero__trainer-logo-img">
+                        </div>
+                    </div>
+                    <p class="hero__methodology">
+                        "Metodologia baseada em periodização ondulatória e análise de dados fisiológicos
+                        para maximizar a performance sem lesões."
+                    </p>
+                </div>
+            </div>
+            <div class="hero__runner-icon">
+                <img src="assets/images/runner-icon-red.png" alt="Runner" class="hero__icon-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats" id="stats">
+        <div class="stats__container">
+            <div class="stats__header">
+                <div class="stats__icon">
+                    <img src="assets/images/runner-icon-red.png" alt="Runner Icon"
+                        style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                <h2 class="stats__title">STATUS & ESTATÍSTICAS</h2>
+            </div>
+            <p class="stats__label">MADE IN MINAS</p>
+
+            <!-- Race Comparison -->
+            <div class="stats__comparison">
+                <div class="stats__race-card">
+                    <span class="stats__race-date">04/10/2025</span>
+                    <div class="stats__race-image">
+                        <img src="assets/images/track-field.jpg" alt="Corrida Track&Field">
+                        <div class="stats__race-overlay">
+                            <span class="stats__race-time">40:38</span>
+                            <span class="stats__race-distance">8K</span>
+                        </div>
+                        <div class="stats__race-position">5°IDADE</div>
+                    </div>
+                    <div class="stats__race-info">
+                        <span class="stats__pace">Pace 5:00</span>
+                    </div>
+                </div>
+
+                <div class="stats__vs">
+                    <span class="stats__arrow">→</span>
+                </div>
+
+                <div class="stats__race-card stats__race-card--highlight">
+                    <span class="stats__race-date">11/01/2026</span>
+                    <div class="stats__race-image">
+                        <img src="assets/images/chegada-1731.jpg" alt="WR Run Distrive">
+                        <div class="stats__race-overlay">
+                            <span class="stats__race-time">17:31</span>
+                            <span class="stats__race-distance">5K</span>
+                        </div>
+                        <div class="stats__race-position stats__race-position--gold">3°GERAL</div>
+                    </div>
+                    <div class="stats__race-info">
+                        <span class="stats__pace stats__pace--fast">Pace 3:36</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Evolution Text -->
+            <div class="stats__evolution">
+                <p class="stats__evolution-title">A EVOLUÇÃO EXPONENCIAL</p>
+                <p class="stats__evolution-text">
+                    Em apenas 3 meses, o salto de performance foi absoluto. Saí de um Top 5 na Faixa Etária
+                    (40:45 nos 8k) para disputar a ponta da lança e conquistar o 3° Lugar GERAL (17:31 nos 5k).
+                </p>
+            </div>
+
+            <!-- Other Times -->
+            <div class="stats__other-times">
+                <p><strong>OUTROS TEMPOS -</strong> NATAL SOLIDÁRIO - <span class="highlight">21:20</span> {UNIMED <span
+                        class="highlight">20:07</span>} - IFTM <span class="highlight">19:03</span></p>
+            </div>
+
+            <!-- Goals -->
+            <div class="stats__goals">
+                <p><strong>PRÓXIMO OBJETIVO 2026:</strong> SUB-16 - Ritmo de Elite Regional</p>
+                <p><strong>VISÃO (FUTURO): SUB-15 : 2027</strong> SUB 15 Nível Profissional</p>
+            </div>
+
+            <!-- Target Race Countdown -->
+            <div class="stats__target-race" id="targetRace">
+                <div class="stats__target-header">
+                    <svg class="stats__target-icon" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z" />
+                        <circle cx="12" cy="12" r="5" />
+                    </svg>
+                    <h3 class="stats__target-title">PROVA ALVO</h3>
+                </div>
+                <p class="stats__target-name">Uberaba 21k Half Marathon 2026</p>
+                <p class="stats__target-date">29/03/2026 às 06:30</p>
+                <div class="stats__countdown" id="countdown">
+                    <div class="stats__countdown-item">
+                        <span class="stats__countdown-value" id="countdown-days">00</span>
+                        <span class="stats__countdown-label">DIAS</span>
+                    </div>
+                    <div class="stats__countdown-item">
+                        <span class="stats__countdown-value" id="countdown-hours">00</span>
+                        <span class="stats__countdown-label">HORAS</span>
+                    </div>
+                    <div class="stats__countdown-item">
+                        <span class="stats__countdown-value" id="countdown-minutes">00</span>
+                        <span class="stats__countdown-label">MINUTOS</span>
+                    </div>
+                    <div class="stats__countdown-item">
+                        <span class="stats__countdown-value" id="countdown-seconds">00</span>
+                        <span class="stats__countdown-label">SEGUNDOS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Training Zones -->
+            <div class="stats__zones" id="zones">
+                <h3 class="stats__zones-title">ZONAS DE TREINAMENTO</h3>
+                <div class="stats__test-result">
+                    <!-- Strava Widget -->
+                    <div class="stats__strava-widget" id="strava-widget">
+                        <div class="strava__header">
+                            <svg class="strava__icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M15.387 17.944l-2.089-4.116h-3.065L15.387 24l5.15-10.172h-3.066m-7.008-5.599l2.836 5.598h4.172L10.463 0l-7 13.828h4.169" />
+                            </svg>
+                            <span class="strava__title">ÚLTIMA CORRIDA</span>
+                        </div>
+                        <div class="strava__loading">Carregando...</div>
+                    </div>
+
+                    <div class="stats__test-item">
+                        <span class="stats__test-label">TESTE 3KM</span>
+                        <span class="stats__test-value">0:10:31</span>
+                        <span class="stats__test-sublabel">TEMPO</span>
+                    </div>
+                    <div class="stats__test-item">
+                        <span class="stats__test-value">0:03:30</span>
+                        <span class="stats__test-sublabel">PACE</span>
+                    </div>
+                    <div class="stats__vo2max">
+                        <div class="stats__vo2max-circle">
+                            <span class="stats__vo2max-value">68,73</span>
+                        </div>
+                        <span class="stats__vo2max-label">Vo2Máx em ml/kg/min</span>
+                        <span class="stats__vo2max-status">Superior</span>
+                    </div>
+                </div>
+
+                <div class="stats__zones-table">
+                    <div class="stats__zone-row stats__zone-row--header">
+                        <span>Zona</span>
+                        <span>Pace (min/km)</span>
+                        <span>Km/h</span>
+                        <span>Esforço</span>
+                    </div>
+                    <div class="stats__zone-row stats__zone-row--z1">
+                        <span class="stats__zone-name">Z1</span>
+                        <span>04:37 - 05:51</span>
+                        <span>10,3 - 13,0</span>
+                        <span class="stats__zone-effort">Muito Leve</span>
+                    </div>
+                    <div class="stats__zone-row stats__zone-row--z2">
+                        <span class="stats__zone-name">Z2</span>
+                        <span>04:02 - 04:37</span>
+                        <span>13,0 - 14,9</span>
+                        <span class="stats__zone-effort">Leve/Moderado</span>
+                    </div>
+                    <div class="stats__zone-row stats__zone-row--z3">
+                        <span class="stats__zone-name">Z3</span>
+                        <span>03:30 - 03:46</span>
+                        <span>15,9 - 17,1</span>
+                        <span class="stats__zone-effort">Difícil</span>
+                    </div>
+                    <div class="stats__zone-row stats__zone-row--z4">
+                        <span class="stats__zone-name">Z4</span>
+                        <span>03:03 - 03:26</span>
+                        <span>17,5 - 19,7</span>
+                        <span class="stats__zone-effort">Muito Difícil</span>
+                    </div>
+                    <div class="stats__zone-row stats__zone-row--z5">
+                        <span class="stats__zone-name">Z5</span>
+                        <span>Máximo - 03:03</span>
+                        <span>19,7+</span>
+                        <span class="stats__zone-effort">Esforço Máximo</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Weekly Schedule -->
+            <div class="stats__schedule" id="schedule">
+                <h3 class="stats__schedule-title">CALENDÁRIO SEMANAL DE TREINO</h3>
+                <div class="stats__schedule-grid">
+                    <div class="stats__day-card">
+                        <span class="stats__day-name">Segunda</span>
+                        <span class="stats__day-type">Trotes e Rodagens</span>
+                        <span class="stats__day-icon">🏃</span>
+                    </div>
+                    <div class="stats__day-card stats__day-card--rest">
+                        <span class="stats__day-name">Terça</span>
+                        <span class="stats__day-type">DESCANSO</span>
+                        <span class="stats__day-icon">😴</span>
+                    </div>
+                    <div class="stats__day-card stats__day-card--intense">
+                        <span class="stats__day-name">Quarta</span>
+                        <span class="stats__day-type">Intervalados/Fartlek</span>
+                        <span class="stats__day-icon">⚡</span>
+                    </div>
+                    <div class="stats__day-card stats__day-card--strength">
+                        <span class="stats__day-name">Quinta</span>
+                        <span class="stats__day-type">FORTALECIMENTO</span>
+                        <span class="stats__day-icon">💪</span>
+                    </div>
+                    <div class="stats__day-card">
+                        <span class="stats__day-name">Sexta</span>
+                        <span class="stats__day-type">Trotes Leves</span>
+                        <span class="stats__day-icon">🏃</span>
+                    </div>
+                    <div class="stats__day-card stats__day-card--rest">
+                        <span class="stats__day-name">Sábado</span>
+                        <span class="stats__day-type">Descanso/Leve</span>
+                        <span class="stats__day-icon">🧘</span>
+                    </div>
+                    <div class="stats__day-card stats__day-card--long">
+                        <span class="stats__day-name">Domingo</span>
+                        <span class="stats__day-type">Rodagens Longas</span>
+                        <span class="stats__day-icon">🏅</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trainer Logo -->
+            <div class="stats__trainer-footer">
+                <img src="assets/images/willrunner-logo.png" alt="Will Runner" class="stats__trainer-logo-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Origin Section -->
+    <section class="origin" id="origin">
+        <div class="origin__container">
+            <div class="origin__header">
+                <div class="origin__icon">
+                    <img src="assets/images/runner-icon-red.png" alt="Runner Icon"
+                        style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                <h2 class="origin__title">PLAYER PROFILE</h2>
+                <span class="origin__social">@diesley.sousa</span>
+            </div>
+
+            <div class="origin__content">
+                <div class="origin__images">
+                    <img src="assets/images/corrida-roxa-65.jpg" alt="Diesley correndo" class="origin__main-image">
+                    <img src="assets/images/wr-run-218.png" alt="WR Run 2024" class="origin__secondary-image">
+                </div>
+                <div class="origin__text">
+                    <h3 class="origin__subtitle">A ORIGEM</h3>
+
+                    <div class="origin__section">
+                        <h4 class="origin__section-title">O JOGO MUDOU A VIDA</h4>
+                        <p class="origin__section-text">
+                            Não comecei a correr por amor. Comecei para sobreviver. Durante um divórcio
+                            doloroso, encontrei refúgio no <strong>Nerdfit</strong> — um projeto de incentivo
+                            à saúde física e mental da empresa. Eu precisava daquele objetivo para sair do
+                            silêncio. Corria sozinho, focado em pontuar no desafio e reorganizar a mente.
+                        </p>
+                    </div>
+
+                    <div class="origin__section">
+                        <h4 class="origin__section-title">TALENTO REVELADO</h4>
+                        <p class="origin__section-text">
+                            Ganhei minha primeira inscrição com o Gabriel (idealizador do projeto) e o
+                            resultado surpreendeu. Sem histórico de atleta e sem treinamento formal,
+                            completei minha primeira prova de 8km em 40 minutos. O que era apenas
+                            "participação" revelou um motor natural para a corrida. Ali, a chave virou.
+                        </p>
+                    </div>
+
+                    <div class="origin__section">
+                        <h4 class="origin__section-title">MISSÃO SUB-2:10</h4>
+                        <p class="origin__section-text">
+                            O Nerdfit acabou, mas a disciplina ficou. Transformei a busca por saúde em
+                            obsessão por performance. Hoje, meu objetivo é absoluto: alcançar a Elite e
+                            correr Maratonas Majors abaixo de 2h10min até 35 anos. Cada treino é um tijolo
+                            na construção desse resultado.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Visibility Section -->
+    <section class="visibility" id="visibility">
+        <div class="visibility__container">
+            <div class="visibility__header">
+                <div class="visibility__icon">
+                    <img src="assets/images/runner-icon-red.png" alt="Runner Icon"
+                        style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                <h2 class="visibility__title">VISIBILIDADE 360°</h2>
+                <span class="visibility__social">@diesley.sousa</span>
+            </div>
+
+            <div class="visibility__content">
+                <div class="visibility__main-text">
+                    <h3 class="visibility__question">POR QUE ASSOCIAR SUA</h3>
+                    <h2 class="visibility__brand">MARCA</h2>
+                    <h3 class="visibility__question-end">AO MEU NOME?</h3>
+                </div>
+
+                <div class="visibility__benefits">
+                    <div class="visibility__benefit">
+                        <div class="visibility__benefit-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                            </svg>
+                        </div>
+                        <h4 class="visibility__benefit-title">CRIAÇÃO DE CONTEÚDO</h4>
+                        <p class="visibility__benefit-text">
+                            Criação de Conteúdo: Reels e Stories semanais integrando a marca à rotina de treinos.
+                        </p>
+                    </div>
+
+                    <div class="visibility__benefit">
+                        <div class="visibility__benefit-icon">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z" />
+                            </svg>
+                        </div>
+                        <h4 class="visibility__benefit-title">OUTDOOR EM MOVIMENTO</h4>
+                        <p class="visibility__benefit-text">
+                            Exposição da marca na camiseta oficial de competição em eventos com centenas de
+                            participantes locais.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Investment Tiers -->
+                <div class="visibility__tiers">
+                    <h3 class="visibility__tiers-title">OPORTUNIDADES DE INVESTIMENTO</h3>
+                    <div class="visibility__tier-cards">
+                        <!-- Cota Master -->
+                        <div class="visibility__tier visibility__tier--master">
+                            <div class="tier__header">
+                                <span class="tier__medal">🥇</span>
+                                <span class="visibility__tier-name">COTA MASTER</span>
+                                <span class="tier__type">(Patrocínio Principal)</span>
+                            </div>
+                            <p class="tier__price">R$ 800,00 a R$ 1.000,00 / mês</p>
+                            <p class="visibility__tier-desc">"Eu quero ser profissional. Com 1 salário mínimo, você
+                                viabiliza toda a minha estrutura (fisio + nutri + suplemento) para eu buscar o índice
+                                olímpico. Você será o patrocinador principal."</p>
+                            <button class="tier__button" data-modal="pricing">Ver Custos</button>
+                        </div>
+
+                        <!-- Cota Pro -->
+                        <div class="visibility__tier visibility__tier--pro">
+                            <div class="tier__header">
+                                <span class="tier__medal">🥈</span>
+                                <span class="visibility__tier-name">COTA PRO</span>
+                                <span class="tier__type">(Patrocínio Médio)</span>
+                            </div>
+                            <p class="tier__price">R$ 400,00 / mês</p>
+                            <p class="tier__price-alt">(ou Permuta Total de Serviço)</p>
+                            <p class="visibility__tier-desc">"Esse valor cobre meus Tênis de Rodagem e Academia. Sua
+                                marca vai para a manga da camisa."</p>
+                            <button class="tier__button" data-modal="pricing">Ver Custos</button>
+                        </div>
+
+                        <!-- Cota Apoio -->
+                        <div class="visibility__tier visibility__tier--support">
+                            <div class="tier__header">
+                                <span class="tier__medal">🥉</span>
+                                <span class="visibility__tier-name">COTA APOIO</span>
+                                <span class="tier__type">(Micro-Patrocínio)</span>
+                            </div>
+                            <p class="tier__price">R$ 150,00 / mês</p>
+                            <p class="tier__price-alt">(ou fornecimento de produto)</p>
+                            <p class="visibility__tier-desc">"Com 150 reais, você paga meu Whey Protein do mês e sua
+                                marca aparece no meu site e stories quinzenais."</p>
+                            <button class="tier__button" data-modal="pricing">Ver Custos</button>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="visibility__cta-text">
+                    Aceitamos parcerias via Aporte Financeiro ou Fornecimento de Produtos/Serviços (Permuta) essenciais
+                    para a alta performance.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners" id="partners">
+        <div class="partners__container">
+            <h2 class="partners__title">PARCEIROS & APOIADORES</h2>
+            <div class="partners__grid">
+                <div class="partners__item">
+                    <img src="assets/images/willrunner-logo.png" alt="Will Runner" class="partners__logo-img">
+                </div>
+                <div class="partners__item">
+                    <img src="assets/images/nerdstickers-logo.png" alt="Nerd Stickers" class="partners__logo-img">
+                </div>
+                <div class="partners__item">
+                    <img src="assets/images/adesivos360-logo.png" alt="Adesivos 360" class="partners__logo-img">
+                </div>
+                <div class="partners__item partners__item--empty">
+                    <div class="partners__logo partners__logo--placeholder">
+                        <span>SUA MARCA AQUI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__main">
+                <div class="footer__brand">
+                    <span class="footer__logo">DIESLEY SOUSA</span>
+                    <p class="footer__tagline">Disciplina de Samurai, Alma de Nerd.</p>
+                    <p class="footer__motto">RUMO À ELITE</p>
+                </div>
+                <div class="footer__contact">
+                    <h4 class="footer__contact-title">Contato</h4>
+                    <a href="mailto:diesleysousa@hotmail.com" class="footer__contact-link">
+                        <span>📧</span> diesleysousa@hotmail.com
+                    </a>
+                    <a href="tel:+5534984069997" class="footer__contact-link">
+                        <span>📱</span> (34) 98406-9997
+                    </a>
+                    <a href="https://instagram.com/diesley.sousa" target="_blank" class="footer__contact-link">
+                        <span>📷</span> @diesley.sousa
+                    </a>
+                </div>
+                <div class="footer__cta">
+                    <a href="#" class="footer__train-button" id="trainButton">
+                        Treine com meu treinador
+                    </a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    © 2026 Diesley Sousa. Made in Minas. Todos os direitos reservados.
+                </p>
+                <div class="footer__trainer-credit">
+                    <span>Treinador:</span>
+                    <img src="assets/images/willrunner-logo.png" alt="Will Runner" class="footer__trainer-logo-img">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Pricing Modal -->
+    <div class="pricing-modal" id="pricingModal">
+        <div class="pricing-modal__overlay" id="pricingOverlay"></div>
+        <div class="pricing-modal__container">
+            <button class="pricing-modal__close" id="closePricingModal" aria-label="Fechar">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="pricing-modal__header">
+                <h3 class="pricing-modal__title">DETALHAMENTO DE CUSTOS</h3>
+                <p class="pricing-modal__subtitle">Investimento Mensal para Alta Performance</p>
+            </div>
+            <div class="pricing-modal__content">
+                <div class="pricing-table-wrapper">
+                    <table class="pricing-table">
+                        <thead>
+                            <tr>
+                                <th>Categoria</th>
+                                <th>Item</th>
+                                <th>Custo</th>
+                                <th>Status</th>
+                                <th>Responsável</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Treinamento</td>
+                                <td>Planilha de Treinos / Assessoria</td>
+                                <td>R$ 150,00 - R$ 300,00</td>
+                                <td><span class="status status--ok">✅ OK</span></td>
+                                <td><img src="assets/images/willrunner-logo.png" alt="Will Runner"
+                                        class="pricing-table__logo"></td>
+                            </tr>
+                            <tr>
+                                <td>Competição</td>
+                                <td>Inscrições de Provas (Uberaba/Região)</td>
+                                <td>R$ 150,00 (Média)</td>
+                                <td><span class="status status--open">❌ ABERTO</span></td>
+                                <td>(Pagando do bolso)</td>
+                            </tr>
+                            <tr>
+                                <td>Combustível</td>
+                                <td>Suplementação (Whey, Creatina, Gel, Sais)</td>
+                                <td>R$ 300,00 - R$ 400,00</td>
+                                <td><span class="status status--open">❌ ABERTO</span></td>
+                                <td>(Pagando do bolso)</td>
+                            </tr>
+                            <tr>
+                                <td>Equipamento</td>
+                                <td>Tênis de Rodagem (Troca a cada 600km)</td>
+                                <td>R$ 250,00 (Amortizado)</td>
+                                <td><span class="status status--open">❌ ABERTO</span></td>
+                                <td>(Pagando do bolso)</td>
+                            </tr>
+                            <tr>
+                                <td>Elite Gear</td>
+                                <td>Tênis de Placa de Carbono (Provas)</td>
+                                <td>R$ 150,00 (Amortizado)</td>
+                                <td><span class="status status--open">❌ ABERTO</span></td>
+                                <td>(Pagando do bolso)</td>
+                            </tr>
+                            <tr>
+                                <td>Manutenção</td>
+                                <td>Fisioterapia / Recovery (2x ao mês)</td>
+                                <td>R$ 300,00</td>
+                                <td><span class="status status--open">❌ ABERTO</span></td>
+                                <td>(Sem acompanhamento)</td>
+                            </tr>
+                            <tr>
+                                <td>Nutrição</td>
+                                <td>Nutricionista Esportivo + Dieta</td>
+                                <td>R$ 200,00</td>
+                                <td><span class="status status--open">❌ ABERTO</span></td>
+                                <td>(Sem acompanhamento)</td>
+                            </tr>
+                            <tr>
+                                <td>Academia</td>
+                                <td>Musculação / Fortalecimento</td>
+                                <td>R$ 100,00</td>
+                                <td><span class="status status--open">❌ ABERTO</span></td>
+                                <td>(Pagando do bolso)</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2" class="total-label">TOTAL</td>
+                                <td colspan="3" class="total-value">Custo Mensal para Operar ~ R$ 1.600,00</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+
+                <div class="pricing-modal__transparency">
+                    <h4 class="transparency__title">🛡️ Política de Transparência Radical</h4>
+                    <p class="transparency__text">
+                        "Investimento sério exige retorno claro. Todos os patrocinadores recebem, mensalmente, um
+                        <strong class="text-primary">Relatório de Performance e Financeiro</strong> (Prestação de
+                        Contas) com as notas fiscais
+                        comprovando a destinação exata da verba. Aqui, cada centavo é focado em resultado."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
