@@ -1,0 +1,102 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "assets/images"
+
+collections:
+  # Estatísticas
+  - name: "stats"
+    label: "Estatísticas"
+    files:
+      - name: "statistics"
+        label: "Estatísticas de Corrida"
+        file: "content/stats.json"
+        fields:
+          - { label: "Melhor 5K", name: "best5k", widget: "string" }
+          - { label: "Melhor 10K", name: "best10k", widget: "string" }
+          - { label: "Total de Corridas", name: "totalRaces", widget: "number" }
+          - { label: "Ranking Strava Local", name: "stravaRank", widget: "string" }
+          - { label: "Meses de Treino", name: "trainingMonths", widget: "number" }
+
+  # Galeria
+  - name: "gallery"
+    label: "Galeria de Fotos"
+    files:
+      - name: "gallery_boxes"
+        label: "Caixas da Galeria"
+        file: "content/gallery.json"
+        fields:
+          - label: "Box 1"
+            name: "box1"
+            widget: "object"
+            fields:
+              - { label: "Foto 1", name: "image1", widget: "image" }
+              - { label: "Foto 2", name: "image2", widget: "image" }
+              - { label: "Foto 3", name: "image3", widget: "image" }
+          - label: "Box 2"
+            name: "box2"
+            widget: "object"
+            fields:
+              - { label: "Foto 1", name: "image1", widget: "image" }
+              - { label: "Foto 2", name: "image2", widget: "image" }
+              - { label: "Foto 3", name: "image3", widget: "image" }
+          - label: "Box 3"
+            name: "box3"
+            widget: "object"
+            fields:
+              - { label: "Foto 1", name: "image1", widget: "image" }
+              - { label: "Foto 2", name: "image2", widget: "image" }
+              - { label: "Foto 3", name: "image3", widget: "image" }
+          - label: "Box 4"
+            name: "box4"
+            widget: "object"
+            fields:
+              - { label: "Foto 1", name: "image1", widget: "image" }
+              - { label: "Foto 2", name: "image2", widget: "image" }
+              - { label: "Foto 3", name: "image3", widget: "image" }
+
+  # Sobre
+  - name: "about"
+    label: "Sobre Mim"
+    files:
+      - name: "about_content"
+        label: "Conteúdo Sobre"
+        file: "content/about.json"
+        fields:
+          - { label: "Título", name: "title", widget: "string" }
+          - { label: "Subtítulo", name: "subtitle", widget: "string" }
+          - { label: "Descrição", name: "description", widget: "text" }
+          - { label: "Idade", name: "age", widget: "number" }
+          - { label: "Cidade", name: "city", widget: "string" }
+
+  # Patrocínio
+  - name: "sponsorship"
+    label: "Patrocínio"
+    files:
+      - name: "sponsorship_tiers"
+        label: "Cotas de Patrocínio"
+        file: "content/sponsorship.json"
+        fields:
+          - label: "Cota Master"
+            name: "master"
+            widget: "object"
+            fields:
+              - { label: "Nome", name: "name", widget: "string" }
+              - { label: "Preço", name: "price", widget: "string" }
+              - { label: "Descrição", name: "description", widget: "text" }
+          - label: "Cota Pro"
+            name: "pro"
+            widget: "object"
+            fields:
+              - { label: "Nome", name: "name", widget: "string" }
+              - { label: "Preço", name: "price", widget: "string" }
+              - { label: "Descrição", name: "description", widget: "text" }
+          - label: "Cota Apoio"
+            name: "support"
+            widget: "object"
+            fields:
+              - { label: "Nome", name: "name", widget: "string" }
+              - { label: "Preço", name: "price", widget: "string" }
+              - { label: "Descrição", name: "description", widget: "text" }

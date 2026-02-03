@@ -1,0 +1,17 @@
+{
+    "master": {
+        "name": "COTA MASTER",
+        "price": "R$ 800,00 a R$ 1.000,00 / mês",
+        "description": "Eu quero ser profissional. Com 1 salário mínimo, você viabiliza toda a minha estrutura (fisio + nutri + suplemento) para eu buscar o índice olímpico. Você será o patrocinador principal."
+    },
+    "pro": {
+        "name": "COTA PRO",
+        "price": "R$ 400,00 / mês",
+        "description": "Esse valor cobre meus Tênis de Rodagem e Academia. Sua marca vai para a manga da camisa."
+    },
+    "support": {
+        "name": "COTA APOIO",
+        "price": "R$ 150,00 / mês",
+        "description": "Com 150 reais, você paga meu Whey Protein do mês e sua marca aparece no meu site e stories quinzenais."
+    }
+}

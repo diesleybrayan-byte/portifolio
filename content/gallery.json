@@ -1,0 +1,22 @@
+{
+    "box1": {
+        "image1": "assets/images/chegada-1731.jpg",
+        "image2": "assets/images/hero-regata.jpg",
+        "image3": "assets/images/medalhas.jpg"
+    },
+    "box2": {
+        "image1": "assets/images/corrida-unimed.jpg",
+        "image2": "assets/images/corrida-roxa-65.jpg",
+        "image3": "assets/images/track-field.jpg"
+    },
+    "box3": {
+        "image1": "assets/images/treino-campo.jpg",
+        "image2": "assets/images/wr-run-218.png",
+        "image3": "assets/images/hero-regata.jpg"
+    },
+    "box4": {
+        "image1": "assets/images/podio-willrunner.jpg",
+        "image2": "assets/images/chegada-1731.jpg",
+        "image3": "assets/images/corrida-roxa-65.jpg"
+    }
+}
