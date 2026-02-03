@@ -15,6 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initStravaWidget();
     initPricingModal();
     initPaceChart();
+    initGallery();
 });
 
 /**
@@ -731,4 +732,117 @@ function initPaceChart() {
     };
 
     new Chart(canvas, config);
+}
+
+/**
+ * Photo Gallery Carousel
+ */
+function initGallery() {
+    const track = document.getElementById('galleryTrack');
+    const prevBtn = document.getElementById('galleryPrev');
+    const nextBtn = document.getElementById('galleryNext');
+    const indicatorsContainer = document.getElementById('galleryIndicators');
+
+    if (!track || !prevBtn || !nextBtn || !indicatorsContainer) return;
+
+    const slides = track.querySelectorAll('.gallery__slide');
+    const totalSlides = slides.length;
+    let currentSlide = 0;
+    let autoPlayInterval;
+
+    // Create indicators
+    for (let i = 0; i < totalSlides; i++) {
+        const indicator = document.createElement('div');
+        indicator.className = 'gallery__indicator';
+        if (i === 0) indicator.classList.add('gallery__indicator--active');
+        indicator.addEventListener('click', () => goToSlide(i));
+        indicatorsContainer.appendChild(indicator);
+    }
+
+    const indicators = indicatorsContainer.querySelectorAll('.gallery__indicator');
+
+    function updateGallery() {
+        // Update track position
+        track.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+        // Update indicators
+        indicators.forEach((indicator, index) => {
+            if (index === currentSlide) {
+                indicator.classList.add('gallery__indicator--active');
+            } else {
+                indicator.classList.remove('gallery__indicator--active');
+            }
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        updateGallery();
+    }
+
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        updateGallery();
+    }
+
+    function goToSlide(index) {
+        currentSlide = index;
+        updateGallery();
+        resetAutoPlay();
+    }
+
+    function startAutoPlay() {
+        autoPlayInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+    }
+
+    function stopAutoPlay() {
+        clearInterval(autoPlayInterval);
+    }
+
+    function resetAutoPlay() {
+        stopAutoPlay();
+        startAutoPlay();
+    }
+
+    // Event listeners
+    nextBtn.addEventListener('click', () => {
+        nextSlide();
+        resetAutoPlay();
+    });
+
+    prevBtn.addEventListener('click', () => {
+        prevSlide();
+        resetAutoPlay();
+    });
+
+    // Pause autoplay on hover
+    track.addEventListener('mouseenter', stopAutoPlay);
+    track.addEventListener('mouseleave', startAutoPlay);
+
+    // Touch support for mobile
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    track.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+        stopAutoPlay();
+    });
+
+    track.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+        startAutoPlay();
+    });
+
+    function handleSwipe() {
+        if (touchEndX < touchStartX - 50) {
+            nextSlide();
+        }
+        if (touchEndX > touchStartX + 50) {
+            prevSlide();
+        }
+    }
+
+    // Start autoplay
+    startAutoPlay();
 }
